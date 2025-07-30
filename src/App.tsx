@@ -5,6 +5,7 @@ import AsphaltFeatures from "./components/AsphaltFeatures";
 import ConstructionFeatures from "./components/ConstructionFeatures";
 import Hero from "./components/Hero";
 import History from "./components/History";
+import OurWork from "./components/OurWork";
 
 import Testimonials from "./components/Testimonials";
 import type { TestimonialObj } from "./models/testimonials";
@@ -42,6 +43,8 @@ function App() {
       <ConstructionFeatures />
 
       <Testimonials testimonials={testimonials} />
+
+      <OurWork />
     </>
   );
 }

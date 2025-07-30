@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Sling as Hamburger } from "hamburger-react";
 
-import brandIcon from "../assets/brand-icon.webp";
+import brandIcon from "/assets/brand-icon.webp";
 export default function Hero() {
   const [isOpen, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
