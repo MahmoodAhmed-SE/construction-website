@@ -1,0 +1,70 @@
+.testimonials-container {
+  position: relative;
+  background-image: url("/assets/work-done/thumbnail+(2)-800h.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  padding: 20px;
+  padding-top: 10%;
+}
+
+.testimonials-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.testimonials-container h1 {
+  color: white;
+  position: relative;
+  z-index: 2;
+  font-family: "Sansation", sans-serif;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2;
+  color: white;
+}
+
+.testimonial.active {
+  opacity: 1;
+}
+
+.testimonial p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.testimonial h2,
+.testimonial h3 {
+  padding-right: 20px;
+  text-align: center;
+}
+
+.testimonial h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.testimonial h3 {
+  font-size: 16px;
+}

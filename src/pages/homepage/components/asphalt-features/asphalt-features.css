@@ -1,0 +1,65 @@
+.asphalt-features-container {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("/assets/asphalt-768w.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.asphalt-features-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.history-end-overlay {
+  position: relative;
+  top: -5px;
+  width: 77vw;
+  height: 30px;
+  background-color: white;
+  z-index: 2;
+
+  clip-path: polygon(0 0, 100% 0, 97% 100%, 0 100%);
+  box-shadow: white 2px;
+}
+
+.construction-features-start-overlay {
+  position: absolute;
+  bottom: -5px;
+  width: 77vw;
+  height: 30px;
+  background-color: white;
+  z-index: 2;
+
+  clip-path: polygon(0 0, 97% 0, 100% 100%, 0 100%);
+  box-shadow: white 2px;
+}
+
+.asphalt-features-container .asphalt-features-content {
+  position: relative;
+  z-index: 2;
+  padding: 70px 20px;
+}
+
+.asphalt-features-container .asphalt-features-content div {
+  max-height: 40vh;
+  overflow-y: scroll;
+  margin-top: 5vh;
+}
+
+.asphalt-features-container .asphalt-features-content div h1 {
+  font-size: 2rem;
+  font-family: "Sansation", sans-serif;
+  color: #e74c3c;
+}
+
+.asphalt-features-container .asphalt-features-content div p {
+  margin-top: 10px;
+  color: white;
+  font-size: 1.2rem;
+}

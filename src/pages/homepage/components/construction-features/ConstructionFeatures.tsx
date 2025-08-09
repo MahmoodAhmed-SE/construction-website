@@ -1,3 +1,5 @@
+import "./construction-features.css";
+
 export default function ConstructionFeatures() {
   return (
     <div className="construction-features-container">

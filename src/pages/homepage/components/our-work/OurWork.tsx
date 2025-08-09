@@ -1,3 +1,4 @@
+import "./our-work.css";
 import { useState } from "react";
 
 const imageUrls = [

@@ -1,14 +1,14 @@
 // font: (hero, headers): Sansation, (menu, buttons, text): Lato
 // colors: cta: E74C3C, primary text: 2A2A2A, secondary text: 8F8F8F
 import "./App.css";
-import AsphaltFeatures from "./components/AsphaltFeatures";
-import ConstructionFeatures from "./components/ConstructionFeatures";
-import Hero from "./components/Hero";
-import History from "./components/History";
-import OurWork from "./components/OurWork";
+import AsphaltFeatures from "./components/asphalt-features/AsphaltFeatures";
+import ConstructionFeatures from "./components/construction-features/ConstructionFeatures";
+import Hero from "./components/hero/Hero";
+import History from "./components/history/History";
+import OurWork from "./components/our-work/OurWork";
 
-import Testimonials from "./components/Testimonials";
-import type { TestimonialObj } from "./models/testimonials";
+import Testimonials from "./components/testimonials/Testimonials";
+import type { TestimonialObj } from "../../models/testimonials";
 
 function App() {
   const testimonials: TestimonialObj[] = [

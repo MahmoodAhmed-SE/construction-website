@@ -1,3 +1,5 @@
+import "./asphalt-features.css";
+
 export default function AsphaltFeatures() {
   return (
     <div className="asphalt-features-container">

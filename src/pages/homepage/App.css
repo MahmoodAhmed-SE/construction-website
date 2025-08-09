@@ -1,0 +1,6 @@
+.divider {
+  z-index: 100;
+  margin: 20px 0;
+  width: 30vw;
+  color: #e74c3c;
+}

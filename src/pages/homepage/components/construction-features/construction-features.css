@@ -1,0 +1,28 @@
+
+
+.construction-features-container {
+    min-height: 100vh;
+  }
+  
+  .construction-features-container .construction-features-content {
+    position: relative;
+    z-index: 2;
+    padding: 70px 20px;
+  }
+  
+  .construction-features-container .construction-features-content div {
+    max-height: 40vh;
+    margin-top: 5vh;
+  }
+  
+  .construction-features-container .construction-features-content div h1 {
+    font-size: 2rem;
+    font-family: "Sansation", sans-serif;
+    color: #e74c3c;
+  }
+  
+  .construction-features-container .construction-features-content div p {
+    margin-top: 10px;
+    color: #2a2a2a;
+    font-size: 1.2rem;
+  }
