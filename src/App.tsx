@@ -8,7 +8,7 @@ import History from "./components/History";
 import OurWork from "./components/OurWork";
 
 import Testimonials from "./components/Testimonials";
-import type { TestimonialObj } from "../../models/testimonials";
+import type { TestimonialObj } from "./models/testimonials";
 
 function App() {
   const testimonials: TestimonialObj[] = [

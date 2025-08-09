@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { TestimonialObj } from "../../../models/testimonials";
+import type { TestimonialObj } from "../models/testimonials";
 
 export default function Testimonials({
   testimonials,
@@ -16,7 +16,7 @@ export default function Testimonials({
   }, []);
 
   return (
-    <div className="testimonials-container" id="testimonials">
+    <div className="testimonials-container">
       <h1>Testimonials</h1>
       <hr className="divider"></hr>
       {testimonials.map((testimonial, i) => (
