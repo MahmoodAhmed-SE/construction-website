@@ -1,0 +1,15 @@
+.about_us_container {
+    color: black;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.about_us_container p {
+    margin-top: 20px;
+}
+
