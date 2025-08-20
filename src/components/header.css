@@ -17,6 +17,12 @@ header {
     color: white;
 }
 
+header .brand-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header .brand-icon img {
     height: 50px;
     width: 50px;
@@ -63,3 +69,73 @@ header nav li a.active {
 header nav li:hover {
     color: #e74c3c;
 }
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header.dark-bg {
+        background-color: unset;
+        color: white;
+    }
+
+	header nav {
+        position: static;
+        width: 60vw;
+        height: 70px;
+        background-color: #0a0a0a;
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .toggleMenuButton {
+        display: none;
+    } 
+}
+
+@media (min-width: 1200px) {
+    .header.dark-bg {
+        background-color: unset;
+        color: white;
+    }
+
+	header nav {
+        position: static;
+        width: 60vw;
+        height: 80px;
+        background-color: #0a0a0a;
+        padding: 2.2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .toggleMenuButton {
+        display: none;
+    } 
+} 

@@ -21,7 +21,7 @@ export default function Header({ isStaticColor }: { isStaticColor: boolean }) {
 				!menubarRef.current.contains(e.target as Node) &&
 				toggleButtonRef.current &&
 				!toggleButtonRef.current.contains(e.target as Node)
-      ) {
+			) {
 				setOpen(false);
 			}
 		};
@@ -94,7 +94,7 @@ export default function Header({ isStaticColor }: { isStaticColor: boolean }) {
 				</ul>
 			</nav>
 
-			<div ref={toggleButtonRef}>
+			<div ref={toggleButtonRef} className={"toggleMenuButton"}>
 				<Hamburger
 					toggled={isOpen}
 					toggle={setOpen}
