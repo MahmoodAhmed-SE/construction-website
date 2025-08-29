@@ -74,6 +74,9 @@ textarea::placeholder {
 
 
 @media (min-width: 767px) and (max-width: 1199px) {
+  .contact_us_container {
+    padding: 15vh 30px 10px;
+  }
 
   .form_container input,
   textarea {
@@ -95,7 +98,9 @@ textarea::placeholder {
 }
 
 @media (min-width: 1200px) {
-
+  .contact_us_container {
+    padding: 20vh 50px 10px;
+  }
   .form_container input,
   textarea {
     font-size: 1.8rem;
