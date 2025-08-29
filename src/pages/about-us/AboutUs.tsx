@@ -7,6 +7,7 @@ export default function AboutUs() {
       <Header isStaticColor={true} />
       <div className={styles.about_us_container}>
         <h1>About Us</h1>
+        <hr className="divider" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore
           blanditiis totam eaque perspiciatis esse animi quis ea facere

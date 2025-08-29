@@ -68,3 +68,41 @@
 .testimonial h3 {
   font-size: 16px;
 }
+
+
+
+@media (min-width: 767px) and (max-width: 1199px) {
+  .testimonials-container h1 {
+    font-size: 3rem;
+  }
+
+  .testimonial p {
+    font-size: 1.5rem;
+  }
+
+  .testimonial h2 {
+    font-size: 1.7rem;
+  }
+
+  .testimonial h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonials-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .testimonial p {
+    font-size: 2rem;
+  }
+
+  .testimonial h2 {
+    font-size: 2.2rem;
+  }
+
+  .testimonial h3 {
+    font-size: 1.7rem;
+  }
+}

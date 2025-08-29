@@ -9,8 +9,24 @@ import OurWork from "./components/our-work/OurWork";
 
 import Testimonials from "./components/testimonials/Testimonials";
 import type { TestimonialObj } from "../../models/testimonials";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location]);
+
+  
   const testimonials: TestimonialObj[] = [
     {
       para: "I first started doing work with Derk Harmsen in 1995 at my previous location and transferred to new location in 2006 and new was using a different road construction crew and I convinced them to try Derk Harmsen and we have been using them ever since. They have always given us good competitive bids. Have never ask for a change order unless we changed the scope on them. One giant thing in their favor is they always stand behind their works. It has been a great partnership.",

@@ -22,7 +22,7 @@ textarea {
   border: 2px solid #e74c3c;
   width: 100%;
   height: 50px;
-  font-size: 22px;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #e74c3c;
 }
@@ -33,7 +33,7 @@ textarea {
 }
 
 .radio_buttons h1 {
-  font-size: 25px;
+  font-size: 1.8rem;
 }
 
 .radio_buttons div {
@@ -49,7 +49,7 @@ textarea {
 }
 
 .radio_buttons div label {
-  font-size: 22px;
+  font-size: 1.3rem;
 }
 
 .form_container input::placeholder,
@@ -63,11 +63,54 @@ textarea::placeholder {
 
 .submit_button {
   margin-top: 40px;
-  height: 40px;
+  height: 50px;
   width: 70%;
   background-color: #e74c3c;
   border-radius: 5px;
   color: white;
   border: none;
-  font-size: 25px;
+  font-size: 2rem;
+}
+
+
+@media (min-width: 767px) and (max-width: 1199px) {
+
+  .form_container input,
+  textarea {
+    font-size: 1.6rem;
+  }
+
+  .radio_buttons h1 {
+    font-size: 1.9rem;
+  }
+
+  .radio_buttons div label {
+    font-size: 1.7rem;
+  }
+
+  .submit_button {
+    font-size: 2.5rem;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .form_container input,
+  textarea {
+    font-size: 1.8rem;
+  }
+
+  .radio_buttons h1 {
+    font-size: 2rem;
+  }
+
+  .radio_buttons div label {
+    font-size: 1.8rem;
+  }
+
+  .submit_button {
+    font-size: 2.8rem;
+    height: 65px;
+  }
 }

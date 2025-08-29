@@ -3,11 +3,12 @@ import { useEffect, useRef, useState } from "react";
 import { Sling as Hamburger } from "hamburger-react";
 
 import brandIcon from "/assets/brand-icon.webp";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import "./header.css";
 
 export default function Header({ isStaticColor }: { isStaticColor: boolean }) {
+	const navigator = useNavigate()
 	const [isOpen, setOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
 
@@ -35,6 +36,12 @@ export default function Header({ isStaticColor }: { isStaticColor: boolean }) {
 			window.addEventListener("scroll", onScroll);
 			return () => window.removeEventListener("scroll", onScroll);
 		}, []);
+	}
+
+
+	const scrollToTestimonials = () => { 
+		setOpen(false);
+		navigator("/#testimonials")
 	}
 
 	return (
@@ -76,9 +83,9 @@ export default function Header({ isStaticColor }: { isStaticColor: boolean }) {
 						</NavLink>
 					</li>
 					<li>
-						<a href="/#testimonials" onClick={() => setOpen(false)}>
+						<div onClick={() => scrollToTestimonials()}>
 							TESTIMONIALS
-						</a>
+						</div>
 					</li>
 					<li>
 						<NavLink
